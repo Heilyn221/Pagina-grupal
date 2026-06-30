@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PixelPlay CR - Tienda de Videojuegos</title>
+
+	<!-- Tipografías de Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- Iconos Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/nicole.css">
+</head>
+<body>
+
+	<!-- ===== HERO ===== -->
+	<section class="hero">
+		<div class="hero-contenido">
+			<p class="hero-eyebrow">Tienda de videojuegos &mdash; Costa Rica</p>
+			<h1 class="hero-titulo">PIXEL<span>PLAY</span></h1>
+			<p class="hero-texto">Juegos físicos y digitales, accesorios y consolas. Entrega en todo el país, soporte real de gente que también juega.</p>
+			<a href="#catalogo" class="boton boton-primario">Ver catálogo <i class="fa-solid fa-arrow-down"></i></a>
+		</div>
+	</section>
+
+	<!-- ===== CATEGORÍAS ===== -->
+	<section class="categorias">
+		<button class="chip activo" data-filtro="todos"><i class="fa-solid fa-layer-group"></i> Todos</button>
+		<button class="chip" data-filtro="accion"><i class="fa-solid fa-explosion"></i> Acción</button>
+		<button class="chip" data-filtro="rpg"><i class="fa-solid fa-dragon"></i> RPG</button>
+		<button class="chip" data-filtro="deportes"><i class="fa-solid fa-futbol"></i> Deportes</button>
+		<button class="chip" data-filtro="indie"><i class="fa-solid fa-palette"></i> Indie</button>
+	</section>
+
+	<!-- ===== CATÁLOGO ===== -->
+	<section class="catalogo" id="catalogo">
+		<h2 class="titulo-seccion">Destacados</h2>
+
+		<div class="grid-catalogo">
+
+			<article class="cartucho" data-categoria="accion">
+				<div class="cartucho-tapa" style="background:#FF2E63;"><i class="fa-solid fa-explosion"></i></div>
+				<div class="cartucho-info">
+					<span class="etiqueta">Acción</span>
+					<h3>Furia Carmesí</h3>
+					<p class="precio">₡24.500</p>
+					<button class="boton-agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+				</div>
+			</article>
+
+			<article class="cartucho" data-categoria="rpg">
+				<div class="cartucho-tapa" style="background:#00E5FF;"><i class="fa-solid fa-dragon"></i></div>
+				<div class="cartucho-info">
+					<span class="etiqueta">RPG</span>
+					<h3>Crónicas del Norte</h3>
+					<p class="precio">₡32.000</p>
+					<button class="boton-agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+				</div>
+			</article>
+
+			<article class="cartucho" data-categoria="deportes">
+				<div class="cartucho-tapa" style="background:#FFD23F;"><i class="fa-solid fa-futbol"></i></div>
+				<div class="cartucho-info">
+					<span class="etiqueta">Deportes</span>
+					<h3>Liga Total 26</h3>
+					<p class="precio">₡28.900</p>
+					<button class="boton-agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+				</div>
+			</article>
+
+			<article class="cartucho" data-categoria="indie">
+				<div class="cartucho-tapa" style="background:#9B5DE5;"><i class="fa-solid fa-palette"></i></div>
+				<div class="cartucho-info">
+					<span class="etiqueta">Indie</span>
+					<h3>Jardín de Bits</h3>
+					<p class="precio">₡9.800</p>
+					<button class="boton-agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+				</div>
+			</article>
+
+			<article class="cartucho" data-categoria="accion">
+				<div class="cartucho-tapa" style="background:#FF2E63;"><i class="fa-solid fa-skull"></i></div>
+				<div class="cartucho-info">
+					<span class="etiqueta">Acción</span>
+					<h3>Zona Cero</h3>
+					<p class="precio">₡26.300</p>
+					<button class="boton-agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+				</div>
+			</article>
+
+			<article class="cartucho" data-categoria="rpg">
+				<div class="cartucho-tapa" style="background:#00E5FF;"><i class="fa-solid fa-hat-wizard"></i></div>
+				<div class="cartucho-info">
+					<span class="etiqueta">RPG</span>
+					<h3>Senda Eterna</h3>
+					<p class="precio">₡35.500</p>
+					<button class="boton-agregar"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+				</div>
+			</article>
+
+		</div>
+	</section>
+
+	<!-- ===== OFERTAS ===== -->
+	<section class="ofertas" id="ofertas">
+		<div class="ofertas-card">
+			<i class="fa-solid fa-bolt"></i>
+			<div>
+				<h2>Ofertas de la semana</h2>
+				<p>Hasta 30% en juegos seleccionados de catálogo indie y deportes. Cambia cada lunes.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== POR QUÉ COMPRAR AQUÍ ===== -->
+	<section class="ventajas">
+		<div class="ventaja">
+			<i class="fa-solid fa-truck-fast"></i>
+			<h3>Envío rápido</h3>
+			<p>Entregas en San José en 24h, resto del país 48-72h.</p>
+		</div>
+		<div class="ventaja">
+			<i class="fa-solid fa-shield-halved"></i>
+			<h3>Compra segura</h3>
+			<p>Pagos protegidos y devoluciones sin complicaciones.</p>
+		</div>
+		<div class="ventaja">
+			<i class="fa-solid fa-headset"></i>
+			<h3>Soporte real</h3>
+			<p>Te atiende gente que también juega, no un bot genérico.</p>
+		</div>
+	</section>
+
+	<!-- ===== CONTACTO / FOOTER ===== -->
+	<footer class="pie" id="contacto">
+		<div class="pie-marca">
+			<i class="fa-solid fa-gamepad"></i> PixelPlay CR
+		</div>
+		<div class="pie-redes">
+			<a href="#"><i class="fa-brands fa-instagram"></i></a>
+			<a href="#"><i class="fa-brands fa-tiktok"></i></a>
+			<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+		</div>
+		<p class="pie-texto">&copy; 2026 PixelPlay CR &mdash; Proyecto académico, página individual dentro de Página-Grupal.</p>
+	</footer>
+
+	<script src="js/nicole.js"></script>
+</body>
+</html>
